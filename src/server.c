@@ -2853,8 +2853,8 @@ int homekit_server_on_url(http_parser *parser, const char *data, size_t length) 
             context->endpoint = HOMEKIT_ENDPOINT_PAIR_VERIFY;
         } else if (!strncmp(data, "/pairings", length)) {
             context->endpoint = HOMEKIT_ENDPOINT_PAIRINGS;
-        } else if (!strncmp(data, "/reset", length)) {
-            context->endpoint = HOMEKIT_ENDPOINT_RESET;
+        // } else if (!strncmp(data, "/reset", length)) {
+        //     context->endpoint = HOMEKIT_ENDPOINT_RESET;
         } else if (!strncmp(data, "/resource", length)) {
             context->endpoint = HOMEKIT_ENDPOINT_RESOURCE;
         }
