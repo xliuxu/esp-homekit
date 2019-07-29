@@ -80,7 +80,7 @@ ifdef component_compile_rules
 
 else
     # ESP_IDF
-    COMPONENT_DEPENDS = wolfssl cJSON http-parser
+    COMPONENT_DEPENDS = esp-wolfssl  http-parser
 
     COMPONENT_PRIV_INCLUDEDIRS = src
     COMPONENT_SRCDIRS = src
